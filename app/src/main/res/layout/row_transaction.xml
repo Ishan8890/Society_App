@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@drawable/interact_corner_view"
+    android:layout_marginTop="@dimen/d_10"
+    android:layout_marginBottom="@dimen/d_5"
+    android:layout_marginLeft="@dimen/d_10"
+    android:layout_marginRight="@dimen/d_10"
+    android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ishan"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:paddingTop="@dimen/d_10"
+            android:paddingLeft="@dimen/d_10"
+            android:textSize="@dimen/s_16"/>
+
+        <TextView
+            android:id="@+id/amountType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="60"
+            android:maxLines="2"
+            android:paddingLeft="@dimen/d_10"
+            android:paddingTop="@dimen/d_5"
+            android:text="A-86 "
+            android:textSize="@dimen/s_14"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="02-05-2020"
+            android:paddingTop="@dimen/d_5"
+            android:paddingLeft="@dimen/d_10"
+            android:textStyle="bold"
+            android:onClick="@{(view) -> handlers.onClick(view, obj,0)}" />
+
+        <TextView
+            android:id="@+id/remainingAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/d_10"
+            android:paddingTop="@dimen/d_5"
+            android:textStyle="bold"
+            android:text="total Amount" />
+
+</LinearLayout>

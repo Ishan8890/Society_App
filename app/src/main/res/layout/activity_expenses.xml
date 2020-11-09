@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".ExpensesActivity">
+
+    <Button
+        android:id="@+id/new_expenses"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="@string/new_expenses"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/old_expenses"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="@string/old_expenses"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/expense"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Expense"
+        android:textAllCaps="false" />
+    <Button
+        android:id="@+id/shareItems"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Share Items"
+        android:textAllCaps="false"/>
+</LinearLayout>

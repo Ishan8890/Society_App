@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">SocietyApp</string>
+    <string name="btn_admin">Admin</string>
+    <string name="enter_total_expense_amount">Enter Total Expense Amount</string>
+    <string name="press_the_calender_icon_to_set_the_date">Press the calender icon to set the date</string>
+    <string name="expense_head">expense/head</string>
+    <string name="old_expenses">Old Expenses</string>
+    <string name="new_expenses">New Expenses</string>
+
+    <string-array name="itemList">
+        <item>Electricity</item>
+        <item>Maintenance (Lift)</item>
+        <item>Guard Salary</item>
+        <item>Building Repairing</item>
+        <item>Others</item>
+    </string-array>
+    <string-array name="ItemType">
+        <item>Electricity</item>
+        <item>Maintenance (Lift)</item>
+        <item>Guard Salary</item>
+        <item>Building Repairing</item>
+    </string-array>
+</resources>

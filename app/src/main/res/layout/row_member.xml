@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/interact_corner_view"
+    android:layout_marginTop="@dimen/d_10"
+    android:layout_marginBottom="@dimen/d_5"
+    android:layout_marginLeft="@dimen/d_10"
+    android:layout_marginRight="@dimen/d_10"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:src="@drawable/ic_person_black_24dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="@dimen/d_10"
+        android:layout_marginLeft="@dimen/d_10"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ishan"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:padding="@dimen/d_5"
+            android:textSize="@dimen/s_16"/>
+
+        <TextView
+            android:id="@+id/sub_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/d_5"
+            android:text="A-86 "
+            android:maxLines="2"
+            android:maxLength="60"
+            android:textSize="@dimen/s_14" />
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:text="02-05-2020"
+            android:padding="@dimen/d_5"
+            android:onClick="@{(view) -> handlers.onClick(view, obj,0)}" />
+        <TextView
+            android:id="@+id/totalAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/d_5"
+            android:text="total Amount" />
+        <TextView
+            android:id="@+id/per_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/d_5"
+            android:text="100" />
+        <TextView
+            android:id="@+id/paymentType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/d_5"
+            android:text="Payment Type:Electricity"/>
+        <TextView
+            android:id="@+id/reason"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/d_5"
+            android:paddingBottom="@dimen/d_10"
+            android:text="Reason of expense djah  najhdj  akjdk n a akdak d akdk akd jka  akdj akjd  "/>
+
+    </LinearLayout>
+
+
+    <CheckBox
+        android:id="@+id/status"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:text="status"/>
+</LinearLayout>

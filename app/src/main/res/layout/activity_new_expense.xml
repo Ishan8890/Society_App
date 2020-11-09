@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OldExpenseActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/selectedDate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:text="Selected Date: "
+            android:paddingLeft="@dimen/d_10"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:paddingTop="@dimen/d_10"
+           android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingTop="@dimen/d_7"
+            android:layout_marginRight="@dimen/d_5"
+            android:paddingLeft="@dimen/d_5"
+            android:text="Press the calender icon to check the records" />
+
+        <ImageView
+            android:id="@+id/readCalender"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:layout_marginTop="@dimen/d_5"
+            android:src="@drawable/ic_icons8_calendar" />
+
+    </LinearLayout>
+    <Spinner
+        android:id="@+id/oldExpensesItems"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/d_20"
+        android:layout_marginRight="@dimen/d_20"
+        android:layout_height="@dimen/d_80" />
+
+    <TextView
+        android:id="@+id/totalRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/d_25"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_marginTop="@dimen/d_10"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.65" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"
+        android:textAllCaps="false"
+        android:text="Submit" />
+
+</LinearLayout>
